@@ -1,0 +1,611 @@
+{
+  "id": "02297aed-6113-4dd3-bfbe-65964b899e12",
+  "version": "2.0",
+  "name": "MedCloud",
+  "url": "https://qa.medcloud.link/",
+  "tests": [{
+    "id": "ff52e20b-49a2-45e3-8f08-814064636307",
+    "name": "CT01EnviarMensagem",
+    "commands": [{
+      "id": "d55f592f-11e1-40a3-9a97-1f61751c81b4",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.medcloud.link/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef537eb0-0788-4f2f-aaf7-f1ec73aca9c0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "710x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd83478e-ce9a-44d6-9eec-bbb98f48c307",
+      "comment": "",
+      "command": "click",
+      "target": "id=headerContact",
+      "targets": [
+        ["id=headerContact", "id"],
+        ["css=#headerContact", "css:finder"],
+        ["xpath=//button[@id='headerContact']", "xpath:attributes"],
+        ["xpath=//div[@id='sectionHeaderWeb']/button[6]", "xpath:idRelative"],
+        ["xpath=//div[4]/button[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a0d4c52-f182-4129-a276-ca4f1fb947b0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.xxl\\3Amy-16 > .sm\\3Atext-mob10xl",
+      "targets": [
+        ["css=.xxl\\3Amy-16 > .sm\\3Atext-mob10xl", "css:finder"],
+        ["xpath=//section[@id='Contact']/section/h1", "xpath:idRelative"],
+        ["xpath=//section[6]/section/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Entre em contato')]", "xpath:innerText"]
+      ],
+      "value": "Entre em contato"
+    }, {
+      "id": "7b4b28b9-dac3-409a-85e0-f7e4c72db2ac",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.flex > .flex-col #name",
+      "targets": [
+        ["css=.flex > .flex-col #name", "css:finder"],
+        ["xpath=(//input[@id='name'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac2c6872-09d7-4305-b819-8d4105b54a83",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.flex > .flex-col #email",
+      "targets": [
+        ["css=.flex > .flex-col #email", "css:finder"],
+        ["xpath=(//input[@id='email'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a48613b9-07a4-40bc-9d90-d39f0b710106",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.flex > .flex-col #phone",
+      "targets": [
+        ["css=.flex > .flex-col #phone", "css:finder"],
+        ["xpath=(//input[@id='phone'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55d3102d-4e7c-4514-9758-d3ffdef3f4da",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acca3f17-29e6-45f6-a802-3bc2047252db",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.xxl\\3Ah-12",
+      "targets": [
+        ["css=.xxl\\3Ah-12", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//form/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "efa9e869-7e1d-4f6b-88a1-adff235bf877",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xxl\\3Ah-12",
+      "targets": [
+        ["css=.xxl\\3Ah-12", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//form/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5f1e512-b8c4-49e8-82d7-9dc194e200a0",
+      "comment": "verifica se a notificação da mensagem não enviada é mostrada",
+      "command": "//co",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "066161e8-6892-4d35-850b-25d2c134ea63",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Campo obrigatório faltante.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff2d0441-fc43-4512-be34-925af0536b87",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.bg-red-100",
+      "targets": [
+        ["css=.bg-red-100", "css:finder"],
+        ["xpath=//section[@id='Contact']/section/form/div[4]", "xpath:idRelative"],
+        ["xpath=//form/div[4]", "xpath:position"]
+      ],
+      "value": "Um erro inesperado ocorreu.\\nErro ao enviar mensagem."
+    }, {
+      "id": "62a90cf6-a53f-45b5-96f7-15f9da4aa02f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex > .flex-col #name",
+      "targets": [
+        ["css=.flex > .flex-col #name", "css:finder"],
+        ["xpath=(//input[@id='name'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa434786-70b2-439d-9de3-864eac076541",
+      "comment": "",
+      "command": "type",
+      "target": "css=.flex > .flex-col #name",
+      "targets": [
+        ["css=.flex > .flex-col #name", "css:finder"],
+        ["xpath=(//input[@id='name'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "Thais Haus"
+    }, {
+      "id": "c7d9e26c-f6fe-4b0f-a829-1193dfba076e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex > .flex-col #email",
+      "targets": [
+        ["css=.flex > .flex-col #email", "css:finder"],
+        ["xpath=(//input[@id='email'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dff02683-b8a4-45cf-99e9-38085746e2f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xxl\\3Ah-12",
+      "targets": [
+        ["css=.xxl\\3Ah-12", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//form/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d5601c8-1b4e-4aaa-af03-b1898f965930",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Campo obrigatório faltante.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7341f2e-1fe0-4098-9dea-0ffaa6b93849",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.bg-red-100",
+      "targets": [
+        ["css=.bg-red-100", "css:finder"],
+        ["xpath=//section[@id='Contact']/section/form/div[4]", "xpath:idRelative"],
+        ["xpath=//form/div[4]", "xpath:position"]
+      ],
+      "value": "Um erro inesperado ocorreu.\\nErro ao enviar mensagem."
+    }, {
+      "id": "5ba9221b-6b27-4196-9849-e1550698b480",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex > .flex-col #email",
+      "targets": [
+        ["css=.flex > .flex-col #email", "css:finder"],
+        ["xpath=(//input[@id='email'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fd6e4db-851a-4143-bc32-c991e1750c23",
+      "comment": "",
+      "command": "type",
+      "target": "css=.flex > .flex-col #email",
+      "targets": [
+        ["css=.flex > .flex-col #email", "css:finder"],
+        ["xpath=(//input[@id='email'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "thaisfhaus@gmail.com"
+    }, {
+      "id": "951822f4-af22-4bd9-8497-5952a66c21ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xxl\\3Ah-12",
+      "targets": [
+        ["css=.xxl\\3Ah-12", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//form/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81606998-639a-47e7-8186-d51ce12b483d",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Campo obrigatório faltante.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39756e71-59be-4aeb-9a7c-6661358e7e68",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.bg-red-100",
+      "targets": [
+        ["css=.bg-red-100", "css:finder"],
+        ["xpath=//section[@id='Contact']/section/form/div[4]", "xpath:idRelative"],
+        ["xpath=//form/div[4]", "xpath:position"]
+      ],
+      "value": "Um erro inesperado ocorreu.\\nErro ao enviar mensagem."
+    }, {
+      "id": "7fb188bd-26bb-4439-9de1-f92162ff7b84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex > .flex-col #phone",
+      "targets": [
+        ["css=.flex > .flex-col #phone", "css:finder"],
+        ["xpath=(//input[@id='phone'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "892e79f2-4c6e-4b20-81ff-0e92f467b0fa",
+      "comment": "",
+      "command": "type",
+      "target": "css=.flex > .flex-col #phone",
+      "targets": [
+        ["css=.flex > .flex-col #phone", "css:finder"],
+        ["xpath=(//input[@id='phone'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "+5542998423196"
+    }, {
+      "id": "35b66eef-856c-450d-ac9c-f6c19a6559fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xxl\\3Ah-12",
+      "targets": [
+        ["css=.xxl\\3Ah-12", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//form/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ea403c2-b8ae-43cb-85d0-7a8864e7acf0",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Campo obrigatório faltante.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "445248a5-7874-46d0-a1ad-1fad93f0be67",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.bg-red-100",
+      "targets": [
+        ["css=.bg-red-100", "css:finder"],
+        ["xpath=//section[@id='Contact']/section/form/div[4]", "xpath:idRelative"],
+        ["xpath=//form/div[4]", "xpath:position"]
+      ],
+      "value": "Um erro inesperado ocorreu.\\nErro ao enviar mensagem."
+    }, {
+      "id": "04132473-c75c-4c43-a591-c6fdd201b13a",
+      "comment": "",
+      "command": "click",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b057557d-7c55-4c9f-89b0-bb68828fd875",
+      "comment": "",
+      "command": "type",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Olá, gostaria de saber mais sobre o seu produto"
+    }, {
+      "id": "a23f42a9-acb6-4824-999c-e9ce5a921fef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xxl\\3Ah-12",
+      "targets": [
+        ["css=.xxl\\3Ah-12", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//form/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15a6afef-cc37-439a-9d68-11de8ed54c15",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.xxl\\3Ah-12",
+      "targets": [
+        ["css=.xxl\\3Ah-12", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//form/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviado')]", "xpath:innerText"]
+      ],
+      "value": "Enviado"
+    }, {
+      "id": "ec3e4582-4037-4621-8f94-b495e45fe5d6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sm\\3Ainline",
+      "targets": [
+        ["css=.sm\\3Ainline", "css:finder"],
+        ["xpath=//section[@id='Contact']/section/form/div[4]/span", "xpath:idRelative"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Mensagem enviada com sucesso.')]", "xpath:innerText"]
+      ],
+      "value": "Mensagem enviada com sucesso."
+    }, {
+      "id": "dbc21d92-a6fe-438b-b95a-c5f75da82872",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "434cc103-7507-42df-9487-5b19f6bad376",
+    "name": "CT02RedesSociais",
+    "commands": [{
+      "id": "7c6c8c9f-5318-4537-9629-4c5f80e52e9f",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.medcloud.link/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51e3218b-a7dd-48f4-9b1b-d571ff116e03",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "710x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "248fbed4-d236-4aa2-b542-51efc7aa95ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.space-x-6 > a:nth-child(1)",
+      "targets": [
+        ["css=.space-x-6 > a:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://open.spotify.com/show/4IK3IeDsKHbflXLQ6oy20W')]", "xpath:href"],
+        ["xpath=//section/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36a479f7-be14-4927-9990-0856c032051f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.bnCeva:nth-child(3)",
+      "targets": [
+        ["css=.bnCeva:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='main']/div/div[2]/div[4]/div/div[2]/div[2]/div/div/div[2]/main/section/div/div[5]/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": "Momento Saúde Digital"
+    }, {
+      "id": "aceffe1a-e364-4012-af4b-22851a1194bd",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.medcloud.link/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9eb4c958-b432-44be-9889-a60ddece0a74",
+      "comment": "",
+      "command": "click",
+      "target": "css=.space-x-6 > a:nth-child(2)",
+      "targets": [
+        ["css=.space-x-6 > a:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.instagram.com/medcloudbr/')]", "xpath:href"],
+        ["xpath=//section/div/div/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd3afc16-5d7b-4420-a020-059921526db5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.x1ms8i2q",
+      "targets": [
+        ["css=.x1ms8i2q", "css:finder"],
+        ["xpath=//div[@id='mount_0_0_4v']/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/section/main/div/header/section/div/a/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'medcloudbr')]", "xpath:innerText"]
+      ],
+      "value": "medcloudbr"
+    }, {
+      "id": "e227ab29-0766-4c7e-b7da-47ac5728f688",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.medcloud.link/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ef573e2-3273-4aaa-a4e4-bb6b07ddca9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3)",
+      "targets": [
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.facebook.com/medcloudbr')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b7d9561-db1e-47bb-a4e9-4fb2e033c49b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.x14qwyeo > .x1heor9g",
+      "targets": [
+        ["css=.x14qwyeo > .x1heor9g", "css:finder"],
+        ["xpath=//div[@id='mount_0_0_1I']/div/div/div/div[3]/div/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/div/div/div/div/div/span/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Medcloud')]", "xpath:innerText"]
+      ],
+      "value": "Medcloud"
+    }, {
+      "id": "74517c8e-9b26-468d-bdbc-cce0ebdf3941",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.medcloud.link/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66bc2f42-c706-403d-be2a-2f82187c67de",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(4)",
+      "targets": [
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.facebook.com/medcloudbr')])[2]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b5bf0ea-9245-4396-8eb5-97f68a63ffce",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.css-1dbjc4n:nth-child(2) > .css-1dbjc4n:nth-child(1) > .css-1dbjc4n:nth-child(1) > .css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n > .css-901oao > .css-901oao",
+      "targets": [
+        ["css=.css-1dbjc4n:nth-child(2) > .css-1dbjc4n:nth-child(1) > .css-1dbjc4n:nth-child(1) > .css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n > .css-901oao > .css-901oao", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[3]/div/div/div/div/div[2]/div/div/div[2]/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'@medcloudbr')]", "xpath:innerText"]
+      ],
+      "value": "@medcloudbr"
+    }, {
+      "id": "44445139-89cc-4ac5-9a38-76b172a34b13",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.medcloud.link/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0fbfdd6-f3db-4572-b068-f9a97677b00f",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(5)",
+      "targets": [
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div/div/a[5]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.youtube.com/channel/UCQZCk0wyl9vQLDt84d1Sr1w')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bffebd51-3c9e-4163-807b-f096285d126a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.meta-item > #channel-handle",
+      "targets": [
+        ["css=.meta-item > #channel-handle", "css:finder"],
+        ["xpath=(//yt-formatted-string[@id='channel-handle'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='meta']/span/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//span/yt-formatted-string", "xpath:position"]
+      ],
+      "value": "@Medcloud"
+    }, {
+      "id": "e8e2ed2e-650d-46df-b706-8ca6611bca41",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.medcloud.link/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd204e6d-128b-4acb-ae33-db451a2ff6ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(6)",
+      "targets": [
+        ["css=a:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div/div/a[6]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.linkedin.com/company/medcloud/')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6bfa61b-eaf9-482f-be2a-12867ea16d3e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.org-top-card-summary__tagline",
+      "targets": [
+        ["css=.org-top-card-summary__tagline", "css:finder"],
+        ["xpath=//div[@id='ember25']/div[2]/div[2]/div/div[2]/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'CIS, RIS, PACS: a plataforma de saúde digital mais conectada da América Latina ☁️')]", "xpath:innerText"]
+      ],
+      "value": "CIS, RIS, PACS: a plataforma de saúde digital mais conectada da América Latina ☁️"
+    }, {
+      "id": "a4dae262-64d9-405f-9f49-3aecb9802e7b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "db4535f0-fa30-4227-9bd7-abba29ff4648",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://qa.medcloud.link/"],
+  "plugins": []
+}
